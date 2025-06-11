@@ -17,6 +17,8 @@ Color codes used, renamed, and updated from: [IR codes](https://github.com/danie
 ## How it works
 
 
+https://github.com/user-attachments/assets/5d5c26ff-a1c7-4388-b61e-5e618a7c330e
+
 
 ## Components and diagram
 
@@ -44,7 +46,7 @@ File name: pixmob-music-colorsV1.ino
 File name: pixmob-music-colorsV2.ino
 
 #### Important
-For the code to work correctly, if you only download one of the two versions or single files, you **must** also download the *libraries* folder and keep that exact name, since it contains essential files for managing the colors. Similarly, each `.ino` file must be inside its corresponding folder (although Arduino may create that folders when opening files). Your folder structure should look similar to this:
+For the code to work correctly, if you only download one of the two versions or single files, you **must** also download the *libraries* folder and keep that exact name, since it contains essential files for managing the colors. You also need to import the standard Arduino `IRremote` library and save it in the same `libraries` folder. Similarly, each `.ino` file must be inside its corresponding folder (although Arduino may create that folders when opening files). Your folder structure should look similar to this:
 
 ```
 Arduino/
@@ -93,7 +95,7 @@ if (randomNumber == 1) {
 For this:
 ```
 if (randomNumber == 1) {
-    Serial.println("send red code");
+    Serial.println("send cyan code");
     irsend.sendRaw(cyan, 27, 38);
 }
 ```
